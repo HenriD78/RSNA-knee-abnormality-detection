@@ -1,0 +1,17 @@
+# Shared runtime for the JPEG baseline and DICOM ensemble.
+# Python 3.12 is the local development target. Kaggle records its own versions.
+torch
+torchvision
+timm
+numpy
+pandas
+scipy
+scikit-learn
+iterative-stratification
+Pillow
+pydicom>=3
+safetensors
+opencv-python-headless
+tqdm
+matplotlib
+PyYAML

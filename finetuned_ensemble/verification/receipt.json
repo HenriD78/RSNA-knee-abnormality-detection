@@ -1,0 +1,86 @@
+{
+  "cpu_notebook_default": "75_study_probe_only_full_cache_disabled",
+  "cuda_training_executed": false,
+  "delivered_recovery_and_training_notebooks_validated": [
+    "00_preparer_cache_cpu_corrige.ipynb",
+    "01_pilote_convnext_premier.ipynb",
+    "01_pilotes_coatnet_dinov2.ipynb",
+    "02_entrainer_ensemble_pilote.ipynb"
+  ],
+  "kaggle_pilot_admission_sha256": "96469db233c397159988828852ff4020dab8e1af0c7d7f88441f1cb7c2cb053a",
+  "kaggle_storage_probe_after_optimization_executed": false,
+  "laterality_conflict_policy": "within_series_reject_LR;between_series_warn;no_side_inference_or_flip",
+  "laterality_recovery_cell_sha256": "f6a5ca676cfacb8b615e0f8b502a5fd21a2d69bc4b4d971d9a04535e2e49031f",
+  "laterality_recovery_notebook_sha256": "97d35197df7d43243742ad9d0682a77f43bee5aa66374ced978833f096bedb9c",
+  "legacy_python312_training_bundle_sha256": "871efa18812d1660ed7265cf540604a439197df75c18ca68e42e5ec845babb93",
+  "legacy_python312_training_upload_zip_sha256": "091cc21e666c915d3239186676cf7eee34468ed0aaba8e3c33affad5bb68d03d",
+  "linux_binary_execution_verified_locally": false,
+  "notebook_generators_remaining": false,
+  "notebook_sha256": {
+    "00_preparer_cache_cpu.ipynb": "2de07934014587f67042600fe47365034da032ab57727f445a50a4386edf7aa7",
+    "01_coatnet2/entrainer_coatnet2.ipynb": "ace4db79bff23238c120629654b17053ab9a36604acb2ee7543ff4b6b0e1500c",
+    "01_piloter_et_figer.ipynb": "a8fc4784cf1e0da3ee0c446e46c48f1dd18b40b58b4edea95c7cba820dc88a1e",
+    "02_convnext_small/entrainer_convnext_small.ipynb": "826d1953c1a01b8b33cad0fb7637b50a0dbc61941ddca86df50ab2b29a283c9c",
+    "02_entrainer_deux_gpu.ipynb": "e37bb2c357a2aeca2dbe1a82ed95bdd4b2db9db38984b165312e6a4e1090793c",
+    "03_dinov2_small/entrainer_dinov2_small.ipynb": "03c75125be341aeae13eed2c40ee372d8eb34e2f92981f9229f8134a42384dfc",
+    "03_evaluer_exporter.ipynb": "80b6fb7b4222ec57bde416913364ab1be4b86a725eb89e36836aed8f44608727",
+    "04_soumettre.ipynb": "c38f50616256e8ec2239fe11b6175a7e8f9debf65eea8c51c5c5c89eee35457d"
+  },
+  "notebooks_validated": 8,
+  "python313_patch_zip_sha256": "ac8d0e3190211d0303f033e78e9731553f956bcec7f6e73223f6415afa7f2753",
+  "real_conflicting_kaggle_study_validated": false,
+  "reference_macro_auc": 0.7302461374891095,
+  "reference_paired_bootstrap_valid": 2000,
+  "reported_gpu_pilots": [
+    "convnext_small",
+    "coatnet2",
+    "dinov2_small"
+  ],
+  "reported_gpu_training_folds_completed": 0,
+  "source_files": {
+    "__init__.py": "3a97d1e922d3cbe87fb33b8839dadf43bd53e1f24c11d668bcc3f6dad804bc75",
+    "__main__.py": "77313b5367224a46c31869db93ff2a4904e19ddaa2d324b80a0034af7c14dfc1",
+    "cache.py": "1de62afdcb3cfaed0e0cce299253adab2a4fe387a17043ed4ac419f2f30ef436",
+    "common.py": "e8a332fa61125321812574cd53d998d0e344e13af37956616c636cee86a6d081",
+    "data.py": "87d9e59a1341f8a24c4fdccfbe0e613abe6fb2f4c06881914ede8ecf75a14810",
+    "dicom.py": "a8fea532b4b4d0024e67259f52a98a617c58c81ce692a3b08a70ef4e2f1f5091",
+    "evaluate.py": "44c982d1f8a4ebab0dfb4e81ae79300669c09612d34d53ab592d18d9991542c7",
+    "inference.py": "28e1644346853a0f67cd530b0b9144f6744dac6bd5898a4ffd02e78cd98bcd36",
+    "model.py": "77480e18a5eff0fc28bf98272d0edb9a5878ecedfd0ba883f9ec0537aa6fa07d",
+    "pilot.py": "89ec9f26c1c6cda0a959fd053e505772dd9ec698f1c82047a053d0904d37b3c8",
+    "queue.py": "402397fa30e8ae1745de76820dd59cc0fc9d3bb60416388956321fd86ffb9fdf",
+    "train.py": "9df9d00472f8c3ce7d4b1ff53a8ab7cf29cf4be5b79a1946b007dee8dceed174"
+  },
+  "source_hash": "1f9c80ee22795f8702039ab37d64f84fd865755cd0c1f517134b2c6a6e1912a5",
+  "storage_format": {
+    "compression": "deflate",
+    "format": "npz-adaptive-uint8-delta-x-v1",
+    "lossless": true,
+    "predictor": "horizontal_uint8_difference_modulo_256",
+    "selection": "smallest_compressed_payload"
+  },
+  "storage_recovery_and_probe_cell_sha256": "4ba582894ce0113598607d6c33581ba0c4656780d77e2125185b8ee419f03be9",
+  "storage_recovery_cell_sha256": "f6a5ca676cfacb8b615e0f8b502a5fd21a2d69bc4b4d971d9a04535e2e49031f",
+  "storage_recovery_only_probes_two_centres_verified": true,
+  "storage_roundtrip_bit_exact": true,
+  "tests_passed": 43,
+  "training_bundle_sha256": "df5f4e4fedf9133212ecf4d680cc84b7164815cce8020492414038328af65503",
+  "training_notebook_sha256": "169b1728337977fb5cccebdee034e49148a27b78835e71162f1a00a306544bec",
+  "training_recipe_writer": "immutable-pilot-config-v1; written by notebooks without changing measured model runtime",
+  "training_upload_zip_sha256": "ea3f3fb27c4b7e57e8c82674a2f6f45b5864660b072d16621405e71fd5a471ee",
+  "versions_local": {
+    "numpy": "2.1.3",
+    "pandas": "3.0.5",
+    "pydicom": "3.0.2",
+    "safetensors": "0.8.0",
+    "scipy": "1.18.1",
+    "timm": "1.0.29",
+    "torch": "2.14.0",
+    "torchvision": "0.29.0"
+  },
+  "wheel_compatibility_tested": [
+    "Linux CPython 3.12",
+    "Linux CPython 3.13"
+  ],
+  "worker_resume_test_passed": true
+}

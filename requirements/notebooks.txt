@@ -1,0 +1,6 @@
+-r dev.txt
+seaborn
+ipywidgets
+langdetect
+kaggle
+kagglehub

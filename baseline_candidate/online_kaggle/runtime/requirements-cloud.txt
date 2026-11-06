@@ -1,0 +1,14 @@
+# Le notebook installe hors ligne seulement les deux premières wheels.
+# Garder torch et torchvision CUDA fournis par Kaggle/Colab ; ne pas utiliser le lock macOS.
+timm==1.0.29
+iterative-stratification==0.1.9
+# Bibliothèques attendues dans le runtime scientifique du service :
+torch>=2.4
+torchvision>=0.19
+numpy>=1.26,<3
+pandas>=2.2,<4
+scikit-learn>=1.4,<2
+pillow>=10
+tqdm>=4.66
+huggingface-hub>=0.25
+safetensors>=0.4

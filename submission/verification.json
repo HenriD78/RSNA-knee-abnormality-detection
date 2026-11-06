@@ -1,0 +1,25 @@
+{
+  "example_test_studies": 3,
+  "example_test_frames": 557,
+  "example_inference_seconds": 1.7619186660740525,
+  "oof_prediction_max_abs_error": 1.1102230246251565e-16,
+  "oof_studies_checked": 58,
+  "original_encoder_exact_match": true,
+  "saved_study_feature_max_abs_error": 0.0,
+  "paired_dicom_jpegs": 25,
+  "pixel_mae_mean_0_255": 0.0013847257988527416,
+  "pixel_mae_max_0_255": 0.007692920975387096,
+  "paired_prediction_max_abs_error": 0.0005720662889655559,
+  "tested_transfer_syntaxes": [
+    "1.2.840.10008.1.2.1"
+  ],
+  "dicom_fixture_studies": 3,
+  "dicom_fixture_frames": 15,
+  "synthetic_compressed_multiframe_exact_match": [
+    "JPEG 2000 Image Compression (Lossless Only)",
+    "RLE Lossless"
+  ],
+  "corrupt_slice_handling": true,
+  "model_failures_propagate": true,
+  "kaggle_hidden_run_verified": false
+}

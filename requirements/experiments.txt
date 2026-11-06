@@ -1,0 +1,51 @@
+# Optional broad environment retained from the initial exploration.
+# Start with ../requirements.txt or dev.txt for the maintained pipelines.
+# Core PyTorch Ecosystem (Apple Silicon / CUDA / CPU compatible)
+torch
+torchvision
+torchaudio
+
+# Multimodal, NLP & Weak Supervision (Radiology Reports)
+transformers
+accelerate
+timm
+datasets
+peft
+sentencepiece
+tokenizers
+langdetect
+
+# Medical Imaging & DICOM (RSNA Competition)
+pydicom
+pylibjpeg
+pylibjpeg-libjpeg
+pylibjpeg-openjpeg
+pylibjpeg-rle
+monai
+
+# Image Processing & Data Augmentation
+pillow
+opencv-python-headless
+albumentations
+
+# Data Science, Stratification & Metrics
+numpy
+pandas
+scipy
+scikit-learn
+iterative-stratification
+
+# Visualization & Logging
+matplotlib
+seaborn
+tqdm
+
+# Jupyter Notebook & Interactive Visualization
+ipykernel
+jupyterlab
+notebook
+ipywidgets
+
+# Kaggle Ecosystem & Modern API Access
+kaggle
+kagglehub

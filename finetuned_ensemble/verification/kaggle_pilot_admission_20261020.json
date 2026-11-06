@@ -1,0 +1,172 @@
+{
+  "cache_centres": 2,
+  "cache_manifest_sha256": "e37130e18b5903c32e0842ca5069125bcc62b4f612f47c08fad89b6be19fdb78",
+  "concurrent_throughput_not_yet_measured": true,
+  "conservative_sum_family_quota_hours": 14.013142254748484,
+  "date_paris": "2026-10-20",
+  "derived_remaining_quota_hours": 23.95,
+  "following_session_reported_quota_minutes": 6,
+  "format": "reported-kaggle-pilots-admission-v1",
+  "max_session_hours": 8,
+  "not_a_training_result": true,
+  "protected_quota_hours": 8,
+  "provenance": "User-reported pilot outputs; full raw profile JSON must be read from the saved Kaggle outputs.",
+  "quota_calibration": {
+    "after_hours": 24.05,
+    "approximate_quota_factor": 1.0,
+    "before_hours": 24.1,
+    "reported_elapsed_minutes": 3
+  },
+  "reported_external_fold_evaluated": false,
+  "reported_resume_checks_passed": true,
+  "runtime_source_hash": "1f9c80ee22795f8702039ab37d64f84fd865755cd0c1f517134b2c6a6e1912a5",
+  "schedule_with_margin": [
+    {
+      "end_hours": 1.8001829230181043,
+      "fold": 0,
+      "gpu": 0,
+      "model_id": "convnext_small",
+      "start_hours": 0.0
+    },
+    {
+      "end_hours": 1.8204332216795742,
+      "fold": 1,
+      "gpu": 1,
+      "model_id": "convnext_small",
+      "start_hours": 0.0
+    },
+    {
+      "end_hours": 3.6183763874374777,
+      "fold": 2,
+      "gpu": 0,
+      "model_id": "convnext_small",
+      "start_hours": 1.8001829230181043
+    },
+    {
+      "end_hours": 3.642658249167308,
+      "fold": 3,
+      "gpu": 1,
+      "model_id": "convnext_small",
+      "start_hours": 1.8204332216795742
+    },
+    {
+      "end_hours": 5.445173412765278,
+      "fold": 4,
+      "gpu": 0,
+      "model_id": "convnext_small",
+      "start_hours": 3.6183763874374777
+    },
+    {
+      "end_hours": 5.227825409404027,
+      "fold": 0,
+      "gpu": 1,
+      "model_id": "coatnet2",
+      "start_hours": 3.642658249167308
+    },
+    {
+      "end_hours": 6.826057757955736,
+      "fold": 1,
+      "gpu": 1,
+      "model_id": "coatnet2",
+      "start_hours": 5.227825409404027
+    },
+    {
+      "end_hours": 7.041860268811766,
+      "fold": 2,
+      "gpu": 0,
+      "model_id": "coatnet2",
+      "start_hours": 5.445173412765278
+    },
+    {
+      "end_hours": 8.425413934614022,
+      "fold": 3,
+      "gpu": 1,
+      "model_id": "coatnet2",
+      "start_hours": 6.826057757955736
+    },
+    {
+      "end_hours": 8.644026015736495,
+      "fold": 4,
+      "gpu": 0,
+      "model_id": "coatnet2",
+      "start_hours": 7.041860268811766
+    },
+    {
+      "end_hours": 9.676597143147735,
+      "fold": 0,
+      "gpu": 1,
+      "model_id": "dinov2_small",
+      "start_hours": 8.425413934614022
+    },
+    {
+      "end_hours": 9.90901547708654,
+      "fold": 1,
+      "gpu": 0,
+      "model_id": "dinov2_small",
+      "start_hours": 8.644026015736495
+    },
+    {
+      "end_hours": 10.940062093806409,
+      "fold": 2,
+      "gpu": 1,
+      "model_id": "dinov2_small",
+      "start_hours": 9.676597143147735
+    },
+    {
+      "end_hours": 11.17522454698968,
+      "fold": 3,
+      "gpu": 0,
+      "model_id": "dinov2_small",
+      "start_hours": 9.90901547708654
+    },
+    {
+      "end_hours": 12.20936301338929,
+      "fold": 4,
+      "gpu": 1,
+      "model_id": "dinov2_small",
+      "start_hours": 10.940062093806409
+    }
+  ],
+  "selected_recipes": [
+    {
+      "budget_quota_hours": 6.0,
+      "epochs": 7,
+      "model_id": "convnext_small",
+      "projected_quota_hours_with_20pct_margin": 5.44517341276528,
+      "reported_timing_fields": {
+        "checkpoint_seconds": 0.2774499589999664,
+        "eval_seconds_per_study": 0.13518417631249946,
+        "head_seconds_per_study": 0.11061963937499897,
+        "reload_seconds": 82.703469584,
+        "tail_seconds_per_study": 0.22806981550961652
+      }
+    },
+    {
+      "budget_quota_hours": 5.0,
+      "epochs": 9,
+      "model_id": "coatnet2",
+      "projected_quota_hours_with_20pct_margin": 4.784019763207936,
+      "reported_timing_fields": {
+        "checkpoint_seconds": 0.4221221160000823,
+        "eval_seconds_per_study": 0.34772906112499413,
+        "head_seconds_per_study": 0.11931453775000023,
+        "reload_seconds": 213.8957813510001,
+        "tail_seconds_per_study": 0.13391070041346062
+      }
+    },
+    {
+      "budget_quota_hours": 4.0,
+      "epochs": 10,
+      "model_id": "dinov2_small",
+      "projected_quota_hours_with_20pct_margin": 3.783949078775267,
+      "reported_timing_fields": {
+        "checkpoint_seconds": 0.12848489099997096,
+        "eval_seconds_per_study": 0.11684530662500947,
+        "head_seconds_per_study": 0.11842553281252322,
+        "reload_seconds": 25.261385984999833,
+        "tail_seconds_per_study": 0.10145846540384494
+      }
+    }
+  ],
+  "simulated_combined_two_gpu_hours_with_margin": 12.20936301338929
+}

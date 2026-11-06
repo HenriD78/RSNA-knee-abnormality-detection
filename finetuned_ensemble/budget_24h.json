@@ -1,0 +1,49 @@
+{
+  "status": "planning_only",
+  "total_quota_hours": 24.0,
+  "quota_basis": "remaining_hours_shown_by_kaggle",
+  "quota_factor_must_be_measured": true,
+  "max_visible_gpus": 2,
+  "execution_strategy": "independent_fold_workers_no_ddp",
+  "stages": [
+    {
+      "id": "profilage_et_integrite",
+      "quota_hours": 1.0
+    },
+    {
+      "id": "convnext_small",
+      "quota_hours": 6.0
+    },
+    {
+      "id": "coatnet2",
+      "quota_hours": 5.0
+    },
+    {
+      "id": "dinov2_small",
+      "quota_hours": 4.0
+    },
+    {
+      "id": "validation_oof",
+      "quota_hours": 1.0
+    },
+    {
+      "id": "export_et_soumission",
+      "quota_hours": 4.0
+    },
+    {
+      "id": "reserve_reprise",
+      "quota_hours": 3.0
+    }
+  ],
+  "competition_deadline_utc": "2026-10-22T23:59:00+00:00",
+  "competition_deadline_paris": "2026-10-23T01:59:00+02:00",
+  "internal_code_freeze_paris": "2026-10-21T22:00:00+02:00",
+  "internal_final_submission_start_paris": "2026-10-22T12:00:00+02:00",
+  "competition_max_runtime_hours": 9.0,
+  "notes_fr": [
+    "Les enveloppes sont des plafonds de quota, pas des temps d’entraînement mesurés.",
+    "Le prétraitement CPU sans accélérateur ne doit pas consommer cette enveloppe GPU.",
+    "Le temps de scoring caché et la file d’attente restent distincts du quota affiché : ne pas présumer leur décompte.",
+    "Le nombre d’époques est arrêté avant les évaluations externes, à partir du débit et de la mémoire mesurés."
+  ]
+}

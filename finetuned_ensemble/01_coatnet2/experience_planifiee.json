@@ -1,0 +1,115 @@
+{
+  "status": "specification_only_not_a_training_cli_config",
+  "model_id": "coatnet2",
+  "priority": 2,
+  "reference_protocol": "../PROTOCOLE_COMMUN_FR.md",
+  "inputs_manifest": "../entrees_manifest.json",
+  "budget_quota_hours": 5.0,
+  "initialization": {
+    "kind": "generic_pretrained",
+    "timm_model": "coatnet_rmlp_2_rw_384.sw_in12k_ft_in1k",
+    "source_reader": "coatnet",
+    "revision": "2c31d82376cc244c907c064332941e6c65be81f1",
+    "weight_path": "baseline_candidate/assets/coatnet/model.safetensors",
+    "paths_relative_to": "project_root",
+    "weight_sha256": "91570c7af10fea0af03c1b0a49be3e4775596239890eb4193c75129b3045623e",
+    "rsna_public_checkpoint_allowed_for_clean_oof": false
+  },
+  "cv": {
+    "master_folds": "baseline_candidate/artifacts/full/prepared/train_folds.csv",
+    "folds_sha256": "204544faed4c43c8576e0187738d57b7bfd054e277c11dedefa8acf44d7951f8",
+    "n_folds": 5,
+    "seed": 42,
+    "train_folds": "all_except_k",
+    "predict_fold": "k",
+    "validation_fold_for_tuning": false
+  },
+  "input": {
+    "format": "dicom_2_5d",
+    "input_size": 384,
+    "slots": 6,
+    "channels": "three_adjacent_slices",
+    "cache_resolution": 384,
+    "cache_windows_per_slot_target": 4,
+    "cache_windows_per_slot_fallback": 2,
+    "train_windows_per_slot": 1,
+    "eval_windows_per_slot": "all_in_frozen_cache",
+    "missing_slots": "masked",
+    "slot_fill": false,
+    "relative_physical_position_embedding": true,
+    "normalization_mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "normalization_std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "resize_interpolation": "bicubic",
+    "extra_center_crop": false
+  },
+  "head": {
+    "projection_dim": 128,
+    "transformer_layers": 0,
+    "transformer_heads": 4,
+    "attention_pools": 12,
+    "dropout": 0.1,
+    "initialization": "new_seeded_head"
+  },
+  "training": {
+    "epochs_target": 3,
+    "epochs_minimum": 2,
+    "head_warmup_epochs": 1,
+    "epochs_frozen_after_profiling": true,
+    "tail_policy": "last_stage",
+    "backbone_learning_rate": 5e-06,
+    "head_learning_rate": 0.0003,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "exclude_bias_norm_from_decay": true,
+    "scheduler": "warmup_5pct_tail_steps_then_cosine",
+    "final_lr_factor": 0.1,
+    "study_batch_per_gpu": 1,
+    "gradient_accumulation_steps": 8,
+    "effective_batch_per_fold": 8,
+    "precision": "amp_fp16_gradscaler",
+    "max_grad_norm": 1.0,
+    "cpu_threads_per_worker": 1,
+    "loader_workers_per_gpu": 1,
+    "loss": "confidence_weighted_bce_per_finding",
+    "missing_targets_weight": 0.0,
+    "gold_confidence": 1.0,
+    "freeze_batchnorm_running_stats": true,
+    "checkpoint_selection": "final_epoch_fixed_in_advance",
+    "ema": false,
+    "swa": false,
+    "focal_loss": false,
+    "mixup": false,
+    "training_mirror": false,
+    "tta": false,
+    "seed": "42 + fold",
+    "confidence_normalization_scope": "effective_accumulated_batch_per_finding",
+    "epoch_increase_allowed_only_before_outer_evaluation": true
+  },
+  "outputs": {
+    "planned_checkpoints": [
+      "final_fold0.safetensors",
+      "final_fold1.safetensors",
+      "final_fold2.safetensors",
+      "final_fold3.safetensors",
+      "final_fold4.safetensors"
+    ],
+    "planned_oof": "oof_coatnet2.csv",
+    "expected_oof_studies": 4407,
+    "expected_gold_studies": 58,
+    "inference_fold_aggregation": "mean_probabilities_before_global_ranks",
+    "checkpoint_content": "complete_model_state_dict_including_head"
+  },
+  "notes_fr": [
+    "Ces valeurs servent à la prochaine implémentation ; aucun entraînement n’est lancé par ce fichier.",
+    "Profiler forward + backward + chargement, pas seulement l’encodeur gelé.",
+    "Pour une adaptation depuis un checkpoint RSNA public, ouvrir une expérience distincte et signaler la validation non indépendante."
+  ]
+}

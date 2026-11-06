@@ -1,0 +1,19 @@
+{
+  "provenance": "User-provided successful Kaggle 03b log; no new Kaggle measurement performed locally.",
+  "serial_profile": {
+    "studies": 50,
+    "uids_hash": "708c057265a4b50f4a8a03a48e428835c97f5262bacae92edea13c73fd0f21d1",
+    "startup_seconds": 13.004373353000119,
+    "seconds_per_study": 37.03825157326,
+    "quota_factor": 1.0,
+    "elapsed_seconds": 1864.9169520159999,
+    "scope": "decode_render_all_15_models_global_ranks",
+    "series_sha256": "573c1d80772bf41211c91b149c95677385a1c22d63f485c347f1b46c0177aef3"
+  },
+  "original_training_source_hash": "1f9c80ee22795f8702039ab37d64f84fd865755cd0c1f517134b2c6a6e1912a5",
+  "maximum_studies_under_eight_hours_with_twenty_percent_margin_and_two_minute_csv_reserve": 644,
+  "planning_scenario_studies": 1300,
+  "planning_scenario_hours_with_margin": 16.053521341010722,
+  "next_action": "Measure the four-process cache path with 03c_mesurer_inference_parallele.ipynb before submission.",
+  "speedup_verified_on_kaggle": false
+}

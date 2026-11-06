@@ -1,0 +1,27 @@
+{
+  "provenance": "Successful Kaggle 03c timing output supplied by the user.",
+  "admission_profile": {
+    "cache_reused": false,
+    "elapsed_seconds": 638.171199781,
+    "execution": {
+      "batch_size": 4,
+      "helper_sha256": "b2652044efc6a20d6a69ee9a08378427e9ff468c0b42d6ce78be3651b23067f7",
+      "pipeline": "parallel-study-cache-v1",
+      "workers": 4
+    },
+    "preprocessing_seconds": 513.9414926280001,
+    "quota_factor": 1.0,
+    "scope": "decode_render_parallel_cache_all_15_models_global_ranks",
+    "seconds_per_study": 12.491318503720004,
+    "series_sha256": "573c1d80772bf41211c91b149c95677385a1c22d63f485c347f1b46c0177aef3",
+    "startup_seconds": 13.605274594999855,
+    "studies": 50,
+    "uids_hash": "708c057265a4b50f4a8a03a48e428835c97f5262bacae92edea13c73fd0f21d1"
+  },
+  "fits_planning_scenario": true,
+  "maximum_studies_under_eight_hours": 1912,
+  "planning_studies": 1300,
+  "planning_hours_with_margin": 5.416683927888391,
+  "next_notebook": "dist/04_soumettre_parallele.ipynb",
+  "weights_and_renderer_changed": false
+}

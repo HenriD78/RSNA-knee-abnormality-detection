@@ -1,0 +1,58 @@
+{
+  "status": "planning_only",
+  "created": "2026-10-19",
+  "paths_relative_to": "project_root",
+  "master_folds_authority": "baseline_candidate/artifacts/full/prepared/train_folds.csv",
+  "seed": 42,
+  "n_folds": 5,
+  "studies": 4407,
+  "gold_studies": 58,
+  "weak_studies": 4349,
+  "report_groups": 4257,
+  "fold_counts": {
+    "0": 920,
+    "1": 875,
+    "2": 880,
+    "3": 871,
+    "4": 861
+  },
+  "gold_fold_counts": {
+    "0": 12,
+    "1": 11,
+    "2": 13,
+    "3": 11,
+    "4": 11
+  },
+  "files": {
+    "master_folds": {
+      "path": "baseline_candidate/artifacts/full/prepared/train_folds.csv",
+      "sha256": "204544faed4c43c8576e0187738d57b7bfd054e277c11dedefa8acf44d7951f8"
+    },
+    "targets": {
+      "path": "baseline_candidate/artifacts/full/prepared/targets.csv",
+      "sha256": "95effdac277078060fb8a6d06d01f938611e885585d487bac9b6625368ea97e1"
+    },
+    "gold_labels": {
+      "path": "baseline_candidate/artifacts/full/prepared/gold_labels.csv",
+      "sha256": "dd01615ce3947e5b16bf4701f5d8004dfa5d301d9250543459170ab1695d865f"
+    },
+    "train_csv": {
+      "path": "data/train.csv",
+      "sha256": "8ca2203c0e9d61c080c7a314c7cdb51c1b03a1d9eb4770819f7f34af53ef4e33"
+    },
+    "train_series_csv": {
+      "path": "data/train_series.csv",
+      "sha256": "573c1d80772bf41211c91b149c95677385a1c22d63f485c347f1b46c0177aef3"
+    },
+    "weak_labels": {
+      "path": "data/derived/report_labels_v2.csv",
+      "sha256": "d6a8b162f3d53c6d39640b0f30f3e72dce59bcf5401fd543bdb32ab273a75757"
+    }
+  },
+  "patient_independence_established": false,
+  "notes_fr": [
+    "Réutiliser ces folds ; ne pas exécuter le générateur simplifié du guide CV.",
+    "Les DICOM complets seront lus depuis la compétition sur Kaggle ; data/ local reste inchangé.",
+    "Les annotations faibles existantes ont déjà été auditées contre les gold ; cette provenance reste exploratoire."
+  ]
+}

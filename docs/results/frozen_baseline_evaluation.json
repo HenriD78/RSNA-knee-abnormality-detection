@@ -1,0 +1,127 @@
+{
+  "profile": "full",
+  "weight_selection": "fixed_before_gold_evaluation",
+  "gold": {
+    "coatnet": {
+      "macro_auc": 0.701474775635519,
+      "defined_targets": 12,
+      "studies": 58
+    },
+    "small": {
+      "macro_auc": 0.7293068163148186,
+      "defined_targets": 12,
+      "studies": 58
+    },
+    "tiny": {
+      "macro_auc": 0.7161753282630471,
+      "defined_targets": 12,
+      "studies": 58
+    },
+    "dino": {
+      "macro_auc": 0.7181567241507794,
+      "defined_targets": 12,
+      "studies": 58
+    },
+    "baseline2": {
+      "macro_auc": 0.722917569768374,
+      "defined_targets": 12,
+      "studies": 58
+    },
+    "baseline3": {
+      "macro_auc": 0.729964785572966,
+      "defined_targets": 12,
+      "studies": 58
+    },
+    "candidate05": {
+      "macro_auc": 0.7302461374891095,
+      "defined_targets": 12,
+      "studies": 58
+    },
+    "candidate10": {
+      "macro_auc": 0.7313161885754963,
+      "defined_targets": 12,
+      "studies": 58
+    },
+    "candidate15": {
+      "macro_auc": 0.7332956315639833,
+      "defined_targets": 12,
+      "studies": 58
+    }
+  },
+  "weak_proxy": {
+    "coatnet": {
+      "macro_auc": 0.7103637671432773,
+      "defined_targets": 12,
+      "studies": 4349
+    },
+    "small": {
+      "macro_auc": 0.7112103841390492,
+      "defined_targets": 12,
+      "studies": 4349
+    },
+    "tiny": {
+      "macro_auc": 0.7061974553275947,
+      "defined_targets": 12,
+      "studies": 4349
+    },
+    "dino": {
+      "macro_auc": 0.7152129867270767,
+      "defined_targets": 12,
+      "studies": 4349
+    },
+    "baseline2": {
+      "macro_auc": 0.7235998592192819,
+      "defined_targets": 12,
+      "studies": 4349
+    },
+    "baseline3": {
+      "macro_auc": 0.7308915077987974,
+      "defined_targets": 12,
+      "studies": 4349
+    },
+    "candidate05": {
+      "macro_auc": 0.7323898846837661,
+      "defined_targets": 12,
+      "studies": 4349
+    },
+    "candidate10": {
+      "macro_auc": 0.7337124418371839,
+      "defined_targets": 12,
+      "studies": 4349
+    },
+    "candidate15": {
+      "macro_auc": 0.7347889185050231,
+      "defined_targets": 12,
+      "studies": 4349
+    }
+  },
+  "gold_folds": {
+    "0": {
+      "studies": 12
+    },
+    "1": {
+      "studies": 11
+    },
+    "2": {
+      "studies": 13
+    },
+    "3": {
+      "studies": 11
+    },
+    "4": {
+      "studies": 11
+    }
+  },
+  "bootstrap_primary": {
+    "requested": 2000,
+    "valid": 2000,
+    "attempts": 2000,
+    "ci95": [
+      -0.0016280093736490448,
+      0.0024053920553797703
+    ],
+    "fraction_positive": 0.634,
+    "interpretation": "Exploratoire, conditionnel aux modèles OOF ; aucun choix automatique."
+  },
+  "interpretation": "Gold OOF exploratoire ; weak_proxy mesure l'accord avec les heuristiques."
+}

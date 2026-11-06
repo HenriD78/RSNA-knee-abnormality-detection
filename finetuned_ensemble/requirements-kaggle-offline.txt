@@ -1,0 +1,10 @@
+# Torch, torchvision, NumPy, SciPy et pandas proviennent du service Kaggle.
+# Les versions effectives sont enregistrées puis contrôlées à la reprise/inférence.
+timm==1.0.29
+pydicom==3.0.2
+safetensors==0.8.0
+pylibjpeg==2.1.0
+pylibjpeg-libjpeg==2.4.0
+pylibjpeg-openjpeg==2.5.0
+pylibjpeg-rle==2.2.0
+python-gdcm==3.2.6

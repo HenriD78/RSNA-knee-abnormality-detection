@@ -1,0 +1,9 @@
+.venv/
+cache/*
+!cache/.gitkeep
+assets/*
+!assets/.gitkeep
+artifacts/*
+!artifacts/.gitkeep
+__pycache__/
+.ipynb_checkpoints/

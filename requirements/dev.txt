@@ -1,0 +1,7 @@
+-r ../requirements.txt
+pytest
+nbformat
+nbclient
+ipykernel
+jupyterlab
+packaging

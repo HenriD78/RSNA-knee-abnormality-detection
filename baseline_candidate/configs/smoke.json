@@ -1,0 +1,23 @@
+{
+  "profile": "smoke",
+  "data_dir": "../data",
+  "output_dir": "artifacts/smoke",
+  "seed": 42,
+  "n_folds": 5,
+  "samples_per_slot": 2,
+  "device": "cpu",
+  "cpu_threads": 4,
+  "extraction_batch_size": 4,
+  "coatnet_batch_size": 1,
+  "epochs": 1,
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "dropout": 0.1,
+  "hidden_dim": 128,
+  "transformer_heads": 4,
+  "tiny_depth": 2,
+  "bootstrap_samples": 0,
+  "smoke_gold_per_fold": 2,
+  "smoke_weak_per_fold": 2
+}
